@@ -1,0 +1,14 @@
+#!/bin/sh
+param=""
+if [ $# -ne 1 ]; then
+	param="死";
+else
+	param=$1;
+fi
+
+echo "＿人人 人人＿"
+echo "＞ 突然の${param} ＜"
+echo "￣Y^Y^Y^Y￣"
+
+exit 0
+
