@@ -8,6 +8,6 @@
 
 これをやるだけ
 
-./sudden $args
+    ./sudden $args
 
 $args無い時はデフォルトで「死」になります
