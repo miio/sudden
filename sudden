@@ -8,7 +8,7 @@ fi
 
 echo "＿人人 人人＿"
 echo "＞ 突然の${param} ＜"
-echo "￣Y^Y^Y^Y￣"
+echo "￣Y^Y^Y^Y^Y￣"
 
 exit 0
 
