@@ -6,9 +6,27 @@ else
 	param=$1;
 fi
 
-echo "＿人人 人人＿"
+append_header=" 人人"
+append_footer="^Y^Y"
+count=0
+header="＿人人"
+footer="￣Y^Y^Y^"
+count=1
+size=${#param}
+
+while [ $count -le $size ];
+do
+	count=`expr $count + 2`
+	header="${header}${append_header}"
+	footer="${footer}${append_footer}"
+done
+
+header="${header} 人人＿"
+footer="${footer}Y^Y￣"
+
+echo "${header}"
 echo "＞ 突然の${param} ＜"
-echo "￣Y^Y^Y^Y^Y￣"
+echo "${footer}"
 
 exit 0
 
