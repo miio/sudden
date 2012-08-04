@@ -8,17 +8,18 @@ fi
 
 append_header=" 人人"
 append_footer="^Y^Y"
-count=0
 header="＿人人"
 footer="￣Y^Y^Y^"
 count=1
-size=${#param}
-
+size=`printf "${param}" | wc -c`
+size=`expr $size / 2`
+size=`expr $size - 1`
+echo $size
 while [ $count -le $size ];
 do
-	count=`expr $count + 2`
 	header="${header}${append_header}"
 	footer="${footer}${append_footer}"
+	count=`expr $count + 3`
 done
 
 header="${header} 人人＿"
