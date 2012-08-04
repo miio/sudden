@@ -14,7 +14,6 @@ count=1
 size=`printf "${param}" | wc -c`
 size=`expr $size / 2`
 size=`expr $size - 1`
-echo $size
 while [ $count -le $size ];
 do
 	header="${header}${append_header}"
